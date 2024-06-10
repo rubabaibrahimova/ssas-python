@@ -1,0 +1,13 @@
+pip install xmla 
+
+from xmla import XMLAConnection
+
+# SSAS connection details
+server = '192.168.6.42'
+database = 'ADY'
+cube = 'Model'
+username = 'r.ibrahimova'
+password = 'Atilla2005!'
+
+# Create a connection
+conn = XMLAConnection(server, database=database, user=username, password=password)
